@@ -140,7 +140,6 @@
             android:layout_height="158dp"
             android:layout_marginStart="@dimen/paddingButtons"
             android:layout_marginTop="4dp"
-            android:contentDescription="@string/samuel_ballon_text"
             android:src="@drawable/shoes_motherfucker_motherfucker_shoes_yellow"
             app:layout_constraintStart_toEndOf="@+id/shoesMFshoesView"
             app:layout_constraintTop_toTopOf="parent" />

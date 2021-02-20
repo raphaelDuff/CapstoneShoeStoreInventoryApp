@@ -7,7 +7,11 @@
     <string name="create_new_account">Create New Account</string>
     <string name="welcome">Welcome</string>
     <string name="go_to_instructions">Go to Instructions!</string>
-    <string name="welcome_info_text">Here you\'re going to find:\n\n<ol><li>Shoes Motherfucker Motherfucker Shoes\n\n</li><li><b>M</b>odel-<b>V</b>iew-<b>V</b>iew<b>M</b>odel app architecture</li></ol></string>
+    <string name="welcome_info_text">This is app that helps the Customer Designer to organize the shoes used in his production.\n\nHere you\'re going to find:\n<ol><li>Shoes Motherfucker Motherfucker Shoes organizer\n</li><li><b>M</b>odel-<b>V</b>iew-<b>V</b>iew<b>M</b>odel app architecture</li></ol></string>
     <string name="samuel_photo_login">Samuel L. Jackson Login Photo</string>
-    <string name="samuel_ballon_text">Text Balan written \"Shoes Motherfucker Motherfucker Shoes\"</string>
+    <string name="samuel_ballon_text">Text Ballon written "Shoes Motherfucker Motherfucker Shoes"</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="intructions_header">Instructions</string>
+    <string name="instructions_body_text">In the next screen you can see the shoes that you already saved or add new shoes. To add new shoes, click in the \"Add new Shoes\" and fill the follow fields:\n\n<b>Person:</b> who is going to wear;\n<b>Shoe Name:</b> shoe model name;\n<b>Company:</b> the store that sold the shoes;\n<b>Description:</b> any obervation about the shoes, the delivery or a special condition.</string>
+    <string name="go_to_shoes_list">Go to Shoes List!</string>
 </resources>

@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".screens.welcome.WelcomeFragment">
+    tools:context=".screens.instruction.InstructionsFragment">
 
     <LinearLayout
-        android:id="@+id/welcomeLinearLayout"
+        android:id="@+id/instructionsLinearLayut"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
@@ -14,7 +15,7 @@
         android:paddingBottom="@dimen/padding">
 
         <TextView
-            android:id="@+id/welcomeTextView"
+            android:id="@+id/instructionsHeaderTextView"
             style="@style/WelcomeStyleText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -22,11 +23,11 @@
             android:layout_marginTop="@dimen/margin_buttons"
             android:layout_marginEnd="@dimen/margin_buttons"
             android:layout_marginBottom="@dimen/margin_buttons"
-            android:text="@string/welcome"
+            android:text="@string/intructions_header"
             android:textAlignment="center" />
 
         <TextView
-            android:id="@+id/welComeTextBodyView"
+            android:id="@+id/instructions_body_TextView"
             style="@style/welcomeInfoText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -34,22 +35,21 @@
             android:layout_marginTop="@dimen/margin_buttons"
             android:layout_marginEnd="@dimen/margin_buttons"
             android:layout_marginBottom="@dimen/margin_buttons"
-            android:text="@string/welcome_info_text" />
+            android:text="@string/instructions_body_text" />
 
         <Button
-            android:id="@+id/buttonToInstructions"
+            android:id="@+id/buttonGoToShoesList"
             style="@style/LoginButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
+            android:layout_gravity="center_horizontal"
             android:layout_marginStart="@dimen/margin_wide"
             android:layout_marginTop="@dimen/margin_wide"
             android:layout_marginEnd="@dimen/margin_wide"
-            android:layout_marginBottom="@dimen/margin_buttons"
             android:paddingStart="@dimen/margin_buttons"
             android:paddingTop="@dimen/paddingButtons"
-            android:paddingEnd="@dimen/margin_buttons"
+            android:paddingEnd="@dimen/paddingButtons"
             android:paddingBottom="@dimen/paddingButtons"
-            android:text="@string/go_to_instructions" />
+            android:text="@string/go_to_shoes_list" />
     </LinearLayout>
 </layout>
