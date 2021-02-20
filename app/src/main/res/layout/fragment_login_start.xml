@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".screens.login.LoginStartFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/loginStartConstraint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="@dimen/padding"
+        android:paddingTop="@dimen/padding"
+        android:paddingEnd="@dimen/padding"
+        android:paddingBottom="@dimen/padding">
+
+        <EditText
+            android:id="@+id/editTextTextEmailAddress"
+            style="@style/LoginInputBox"
+            android:layout_width="277dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:ems="10"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:paddingStart="@dimen/paddingEditText"
+            android:paddingEnd="@dimen/paddingEditText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/shoesMFshoesView" />
+
+        <EditText
+            android:id="@+id/editTextTextPassword"
+            style="@style/LoginInputBox"
+            android:layout_width="277dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="@dimen/margin_buttons"
+            android:layout_marginEnd="16dp"
+            android:ems="10"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:paddingStart="@dimen/paddingEditText"
+            android:paddingEnd="@dimen/paddingEditText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
+
+        <Button
+            android:id="@+id/button"
+            style="@style/LoginButton"
+            android:layout_width="277dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="@dimen/margin_buttons"
+            android:layout_marginEnd="16dp"
+            android:paddingStart="@dimen/paddingButtons"
+            android:paddingTop="@dimen/paddingButtons"
+            android:paddingEnd="@dimen/paddingButtons"
+            android:paddingBottom="@dimen/paddingButtons"
+            android:text="@string/login"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+
+        <View
+            android:id="@+id/dividerLogin"
+            android:layout_width="130dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="@dimen/margin_wide"
+            android:layout_marginTop="@dimen/dividerMargin"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button" />
+
+        <Button
+            android:id="@+id/newAccountButton"
+            style="@style/NewAccountButton"
+            android:layout_width="277dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="@dimen/dividerMargin"
+            android:layout_marginEnd="16dp"
+            android:paddingStart="@dimen/paddingButtons"
+            android:paddingTop="@dimen/paddingButtons"
+            android:paddingEnd="@dimen/paddingButtons"
+            android:paddingBottom="@dimen/paddingButtons"
+            android:text="@string/create_new_account"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/orTextView" />
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="130dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="@dimen/margin_wide"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/orTextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button" />
+
+        <TextView
+            android:id="@+id/orTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/roboto"
+            android:text="@string/or"
+            android:textColor="@android:color/darker_gray"
+            app:layout_constraintEnd_toStartOf="@+id/divider2"
+            app:layout_constraintStart_toEndOf="@+id/dividerLogin"
+            app:layout_constraintTop_toBottomOf="@+id/button" />
+
+        <ImageView
+            android:id="@+id/shoesMFshoesView"
+            android:layout_width="173dp"
+            android:layout_height="223dp"
+            android:layout_marginStart="@dimen/margin_buttons"
+            android:layout_marginTop="@dimen/dividerMargin"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="@string/samuel_photo_login"
+            android:src="@drawable/shoes_motherfucker_motherfucker_shoes"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.043"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/shoe_mf_textview_ballon"
+            android:layout_width="173dp"
+            android:layout_height="158dp"
+            android:layout_marginStart="@dimen/paddingButtons"
+            android:layout_marginTop="4dp"
+            android:contentDescription="@string/samuel_ballon_text"
+            android:src="@drawable/shoes_motherfucker_motherfucker_shoes_yellow"
+            app:layout_constraintStart_toEndOf="@+id/shoesMFshoesView"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
+
+

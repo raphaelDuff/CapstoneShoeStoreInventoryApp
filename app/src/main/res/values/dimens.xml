@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding">16dp</dimen>
+    <dimen name="margin_wide">16dp</dimen>
+    <dimen name="margin_buttons">8dp</dimen>
+    <dimen name="paddingButtons">4dp</dimen>
+    <dimen name="paddingEditText">8dp</dimen>
+    <dimen name="login_text_size">14sp</dimen>
+    <dimen name="or_text_size">48sp</dimen>
+    <dimen name="login_botton_width">277dp</dimen>
+    <dimen name="dividerMargin">36dp</dimen>
+    <dimen name="new_account_text_size">14sp</dimen>
+    <dimen name="welcome_text_size">44sp</dimen>
+    <dimen name="welcome_body_text_size">28sp</dimen>
+</resources>
