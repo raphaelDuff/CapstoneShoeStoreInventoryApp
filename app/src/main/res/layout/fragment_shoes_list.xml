@@ -5,6 +5,12 @@
     xmlns:tools="http://schemas.android.com/tools"
 tools:context=".screens.shoesList.ShoesListFragment">
 
+    <data>
+        <variable
+            name="detailViewModel"
+            type="com.udacity.shoestore.screens.detail.DetailViewModel" />
+    </data>
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/ShopListOutsideConstraintLayout"
         android:layout_width="match_parent"
@@ -35,9 +41,6 @@ tools:context=".screens.shoesList.ShoesListFragment">
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:paddingStart="@dimen/padding"
-                android:paddingTop="@dimen/margin_buttons"
-                android:paddingEnd="@dimen/padding"
                 android:paddingBottom="@dimen/padding">
 
                 <TextView
@@ -53,7 +56,5 @@ tools:context=".screens.shoesList.ShoesListFragment">
                     android:textAlignment="center" />
             </LinearLayout>
         </ScrollView>
-
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

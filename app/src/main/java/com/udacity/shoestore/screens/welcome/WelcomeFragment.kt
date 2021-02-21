@@ -28,11 +28,16 @@ class WelcomeFragment : Fragment() {
         // Inflate the layout for this fragment
         val binding: FragmentWelcomeBinding = DataBindingUtil.inflate(
             inflater, R.layout.fragment_welcome, container, false)
-        binding.buttonToInstructions.setOnClickListener {
-            findNavController().navigate(WelcomeFragmentDirections.actionWelcomeFragmentToInstructionsFragment())
-        }
+
+        // Bind this fragment class to the layout
+        binding.welcomeScreen = this
+
         return binding.root
     }
 
-
+    // Navigate to Instructions Screen - data binding in xml
+    fun goToInstruction() {
+        findNavController().navigate(WelcomeFragmentDirections.actionWelcomeFragmentToInstructionsFragment())
+    }
 }
+

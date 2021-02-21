@@ -7,7 +7,7 @@
     <string name="create_new_account">Create New Account</string>
     <string name="welcome">Welcome</string>
     <string name="go_to_instructions">Go to Instructions!</string>
-    <string name="welcome_info_text">This was store created for Customer Designers to buy and organize the shoes used in movies productions.\n\nHere you\'re going to find:\n<ol><li>Shoes Motherfucker Motherfucker Shoes store\n</li><li><b>M</b>odel-<b>V</b>iew-<b>V</b>iew<b>M</b>odel app architecture</li></ol></string>
+    <string name="welcome_info_text">This store was created for Customer Designers to buy and organize the shoes used in movies productions.\n\nHere you\'re going to find:\n<ol><li>Shoes Motherfucker Motherfucker Shoes store\n</li><li><b>M</b>odel-<b>V</b>iew-<b>V</b>iew<b>M</b>odel app architecture</li></ol></string>
     <string name="samuel_photo_login">Samuel L. Jackson Login Photo</string>
     <string name="samuel_ballon_text">Text Ballon written "Shoes Motherfucker Motherfucker Shoes"</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
@@ -24,8 +24,9 @@
     <string name="company_item">Company:</string>
     <string name="description_item">Description:</string>
     <string name="hint_person">e.g. Joseph Prates</string>
-    <string name="hint_shoe_name">e.g. Adidas Originals</string>
+    <string name="hint_shoe_name">e.g. AllStars</string>
     <string name="hint_shoe_size">e.g. 9</string>
-    <string name="hint_company">e.g ZShoes Factory</string>
-    <string name="hint_description">e.g. It must be customized!</string>
+    <string name="hint_company">e.g MIBR Factory</string>
+    <string name="hint_description">e.g. must be customized!</string>
+    <string name="buy">Buy</string>
 </resources>

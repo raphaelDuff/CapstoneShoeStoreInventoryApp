@@ -3,6 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".screens.welcome.WelcomeFragment">
 
+    <data>
+        <variable
+            name="welcomeScreen"
+            type="com.udacity.shoestore.screens.welcome.WelcomeFragment" />
+    </data>
+
     <LinearLayout
         android:id="@+id/welcomeLinearLayout"
         android:layout_width="match_parent"
@@ -39,6 +45,7 @@
         <Button
             android:id="@+id/buttonToInstructions"
             style="@style/LoginButton"
+            android:onClick="@{() -> welcomeScreen.goToInstruction()}"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"

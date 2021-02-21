@@ -4,6 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".screens.detail.DetailFragment">
 
+    <data>
+        <variable
+            name="detailViewModel"
+            type="com.udacity.shoestore.screens.detail.DetailViewModel" />
+    </data>
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -179,6 +185,33 @@
             android:inputType="textPersonName"
             app:layout_constraintStart_toEndOf="@+id/descriptionItemView"
             app:layout_constraintTop_toBottomOf="@+id/editTextTCompany" />
+
+        <ImageButton
+            android:id="@+id/buttonCancel"
+            android:layout_width="62dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="@dimen/dividerMargin"
+            android:layout_marginBottom="@dimen/dividerMargin"
+            android:background="?android:attr/windowBackground"
+            android:src="@android:drawable/ic_delete"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/buttonBuy"
+            style="@style/BuyButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dividerMargin"
+            android:layout_marginBottom="@dimen/dividerMargin"
+            android:paddingStart="@dimen/cardview_default_elevation"
+            android:paddingTop="@dimen/cardview_default_elevation"
+            android:paddingEnd="@dimen/cardview_default_elevation"
+            android:paddingBottom="@dimen/cardview_default_elevation"
+            android:text="@string/buy"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

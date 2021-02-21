@@ -4,6 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".screens.instruction.InstructionsFragment">
 
+    <data>
+        <variable
+            name="instructionsScreen"
+            type="com.udacity.shoestore.screens.instruction.InstructionsFragment" />
+    </data>
+
     <LinearLayout
         android:id="@+id/instructionsLinearLayut"
         android:layout_width="match_parent"
@@ -39,6 +45,7 @@
 
         <Button
             android:id="@+id/buttonGoToShoesList"
+            android:onClick="@{() -> instructionsScreen.goToShoeList()}"
             style="@style/LoginButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

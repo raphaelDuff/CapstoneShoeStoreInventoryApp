@@ -23,11 +23,17 @@ class InstructionsFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         val binding: FragmentInstructionsBinding = DataBindingUtil.inflate(
-            inflater, R.layout.fragment_instructions, container, false)
-        binding.buttonGoToShoesList.setOnClickListener {
-            findNavController().navigate(InstructionsFragmentDirections.actionInstructionsFragmentToShoesListFragment())
-        }
+            inflater, R.layout.fragment_instructions, container, false
+        )
+
+        // Bind this fragment class to the layout
+        binding.instructionsScreen = this
         return binding.root
+    }
+
+    // Navigate to Shoes List Screen - data binding in xml
+    fun goToShoeList() {
+        findNavController().navigate(InstructionsFragmentDirections.actionInstructionsFragmentToShoesListFragment())
     }
 
 }
