@@ -2,17 +2,17 @@ package com.udacity.shoestore.screens.shoesList
 
 import android.os.Bundle
 import android.view.*
-import androidx.fragment.app.Fragment
+import android.widget.TextView
 import androidx.databinding.DataBindingUtil
-import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProvider
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.activityViewModels
+import androidx.lifecycle.observe
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.ui.NavigationUI
 import com.udacity.shoestore.R
 import com.udacity.shoestore.databinding.FragmentShoesListBinding
 import com.udacity.shoestore.screens.detail.DetailViewModel
-import com.udacity.shoestore.screens.login.LoginStartFragmentDirections
 import timber.log.Timber
 
 
@@ -24,8 +24,8 @@ import timber.log.Timber
 @Suppress("UNREACHABLE_CODE")
 class ShoesListFragment : Fragment() {
 
-    // Declaring DetailViewewModel
-    private lateinit var viewModel: DetailViewModel
+
+    private val viewModel: DetailViewModel by activityViewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -40,14 +40,26 @@ class ShoesListFragment : Fragment() {
             findNavController().navigate(ShoesListFragmentDirections.actionShoesListFragmentToDetailFragment())
         }
         setHasOptionsMenu(true)
-        viewModel = ViewModelProvider(this).get(DetailViewModel::class.java)
-        binding.detailViewModel = viewModel
-        /** Methods for updating the UI **/
-        viewModel.shoeCreated.observe(viewLifecycleOwner, Observer { createdNewShoe ->
-            if (createdNewShoe) {
-                Timber.i("CHACOTA: %s", viewModel.person)
+        viewModel.shoeList.observe(viewLifecycleOwner) { it ->
+            it.forEach {
+
+                val itemView = TextView(this.context)
+                val itemListText: String = getString(
+                    R.string.item_list,
+                    it.person,
+                    it.name,
+                    it.size,
+                    it.company,
+                    it.description
+                )
+
+                Timber.i("Passou por aqui")
+                itemView.text = itemListText
+                itemView.textSize = 18F
+                binding.LinearLayoutScrollView.addView(itemView)
             }
-        })
+        }
+
         return binding.root
     }
 

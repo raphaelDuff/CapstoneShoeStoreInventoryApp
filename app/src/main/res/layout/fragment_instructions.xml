@@ -10,6 +10,10 @@
             type="com.udacity.shoestore.screens.instruction.InstructionsFragment" />
     </data>
 
+    <!--    LinearLayout was chosen here because i'd like to arrange vertically the views -->
+    <!--    This configuration is better for simple layouts, so this fits for this case.-->
+    <!--    In this screen, and for all apps screens, the wide orientation doesn't bring any benefits -->
+    <!--    so the app is configured only to Portrait -->
     <LinearLayout
         android:id="@+id/instructionsLinearLayut"
         android:layout_width="match_parent"

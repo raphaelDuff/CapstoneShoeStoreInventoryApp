@@ -12,7 +12,9 @@
         tools:layout="@layout/fragment_login_start" >
         <action
             android:id="@+id/action_loginStartFragment2_to_welcomeFragment"
-            app:destination="@id/welcomeFragment" />
+            app:destination="@id/welcomeFragment"
+            app:popUpTo="@id/loginStartFragment2"
+            app:popUpToInclusive="true" />
     </fragment>
     <fragment
         android:id="@+id/welcomeFragment"
@@ -22,6 +24,9 @@
         <action
             android:id="@+id/action_welcomeFragment_to_instructionsFragment"
             app:destination="@id/instructionsFragment" />
+        <action
+            android:id="@+id/action_welcomeFragment_self"
+            app:popUpTo="@id/welcomeFragment" />
     </fragment>
     <fragment
         android:id="@+id/instructionsFragment"

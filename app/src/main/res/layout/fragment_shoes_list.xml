@@ -5,12 +5,8 @@
     xmlns:tools="http://schemas.android.com/tools"
 tools:context=".screens.shoesList.ShoesListFragment">
 
-    <data>
-        <variable
-            name="detailViewModel"
-            type="com.udacity.shoestore.screens.detail.DetailViewModel" />
-    </data>
-
+    <!--    ConstrainLayout was chosen to constrain the floatButton in the right place of the screen -->
+    <!--    Then I combined Scroll View nested with LinearLayout to place all items added -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/ShopListOutsideConstraintLayout"
         android:layout_width="match_parent"
@@ -28,6 +24,8 @@ tools:context=".screens.shoesList.ShoesListFragment">
             android:layout_marginBottom="@dimen/dividerMargin"
             android:backgroundTint="@android:color/holo_blue_dark"
             android:clickable="true"
+            android:contentDescription="@string/content_description_add_button"
+            android:focusable="auto"
             android:src="@drawable/ic_add"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />

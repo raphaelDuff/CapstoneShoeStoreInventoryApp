@@ -10,6 +10,8 @@
             type="com.udacity.shoestore.screens.detail.DetailViewModel" />
     </data>
 
+    <!--    ConstraintLayout was chosen because i'd like to display Views aligned horizontally -->
+    <!--    in some parts in the layout and in other parts I'd like to align the View vertically -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"

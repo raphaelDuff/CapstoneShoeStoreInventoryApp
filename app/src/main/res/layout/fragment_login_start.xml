@@ -6,6 +6,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".screens.login.LoginStartFragment">
 
+    <!--    ConstraintLayout was chosen because i'd like to display Views aligned horizontally -->
+    <!--    in some parts in the layout and in other parts I'd like to align the View vertically -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/loginStartConstraint"
         android:layout_width="match_parent"
