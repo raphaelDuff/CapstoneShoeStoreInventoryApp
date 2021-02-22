@@ -7,6 +7,6 @@ This store was created for Customer Designers to buy and organize the shoes used
 
 ## Screenshots
 
-![Screenshot 0](screenshots/screen0.png) ![Screenshot 1](screenshots/screen1.png) ![Screenshot 2](screenshots/screen2.png) ![Screenshot 3](screenshots/screen3.png) ![Screenshot 4](screenshots/screen4.png) ![Screenshot 5](screenshots/screen5.png)
+![Screenshot 0](screenshots/screen0.jpg) ![Screenshot 1](screenshots/screen1.jpg) ![Screenshot 2](screenshots/screen2.jpg) ![Screenshot 3](screenshots/screen3.jpg) ![Screenshot 4](screenshots/screen4.jpg) ![Screenshot 5](screenshots/screen5.jpg)
 
 
