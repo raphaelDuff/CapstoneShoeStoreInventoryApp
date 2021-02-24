@@ -16,12 +16,6 @@ import com.udacity.shoestore.screens.detail.DetailViewModel
 import timber.log.Timber
 
 
-/**
- * A simple [Fragment] subclass.
- * Use the [ShoesListFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
-@Suppress("UNREACHABLE_CODE")
 class ShoesListFragment : Fragment() {
 
 

@@ -13,6 +13,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.udacity.shoestore.R
 import com.udacity.shoestore.databinding.FragmentDetailBinding
+import com.udacity.shoestore.models.DetailLabel
 import com.udacity.shoestore.models.Shoe
 import timber.log.Timber
 
@@ -20,6 +21,13 @@ import timber.log.Timber
 class DetailFragment : Fragment() {
 
     private val viewModel: DetailViewModel by activityViewModels()
+    private val detailLabel: DetailLabel = DetailLabel(
+        "Person:",
+        "Shoe Name:",
+        "Shoe Size:",
+        "Company:",
+        "Description:"
+    )
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -29,7 +37,7 @@ class DetailFragment : Fragment() {
         val binding: FragmentDetailBinding = DataBindingUtil.inflate(
             inflater, R.layout.fragment_detail, container, false
         )
-        Timber.i("Called ViewModelProvider!")
+        binding.detailLabel = detailLabel
 
         binding.buttonBuy.setOnClickListener {
 

@@ -9,7 +9,7 @@
     <string name="go_to_instructions">Go to Instructions!</string>
     <string name="welcome_info_text">This store was created for Customer Designers to buy and organize the shoes used in movie productions.\n\nHere you\'re going to find:\n<ol><li>Shoes Motherfucker Motherfucker Shoes store\n</li><li><b>M</b>odel-<b>V</b>iew-<b>V</b>iew<b>M</b>odel app architecture</li></ol></string>
     <string name="samuel_photo_login">Samuel L. Jackson Login Photo</string>
-    <string name="samuel_ballon_text">Text Ballon written "Shoes Motherfucker Motherfucker Shoes"</string>
+    <string name="samuel_ballon_text">Text Balloon written "Shoes Motherfucker Motherfucker Shoes"</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="intructions_header">Instructions</string>
     <string name="instructions_body_text">In the next screen you can see the shoes that you already saved or add new shoes. To add new shoes, click on the Plus Button, fill the follow fields and we will buy the items for you:\n\n<b>Person:</b> who is going to wear;\n<b>Shoe Name:</b> shoe model name;\n<b>Shoe Size:</b> size of the shoes;\n<b>Company:</b> the store that sold the shoes;\n<b>Description:</b> any observation about the shoes, the delivery or a special condition.</string>
@@ -18,11 +18,6 @@
     <string name="new_order">New Order</string>
     <string name="shoes_list_header">Shoes List</string>
     <string name="description_shoes_detail_image">Illustrative picture: shoes</string>
-    <string name="person_item">Person:</string>
-    <string name="shoe_name_item">Shoe Name:</string>
-    <string name="shoe_size_item">Shoe Size:</string>
-    <string name="company_item">Company:</string>
-    <string name="description_item">Description:</string>
     <string name="hint_person">e.g. Joseph Prates</string>
     <string name="hint_shoe_name">e.g. AllStars</string>
     <string name="hint_shoe_size">e.g. 9</string>

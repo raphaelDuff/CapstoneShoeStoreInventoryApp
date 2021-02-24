@@ -13,11 +13,6 @@ import com.udacity.shoestore.databinding.FragmentWelcomeBinding
 import com.udacity.shoestore.databinding.FragmentWelcomeBindingImpl
 import com.udacity.shoestore.screens.login.LoginStartFragmentDirections
 
-/**
- * A simple [Fragment] subclass.
- * Use the [WelcomeFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
 
 class WelcomeFragment : Fragment() {
 
